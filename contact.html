@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- ===== META TAGS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="meta-title" data-i18n="meta_contact.title">AXION Neuralis — Kontak</title>
+    <meta name="description" id="meta-description" data-i18n="meta_contact.description" content="Hubungi AXION Neuralis untuk pertanyaan, kemitraan strategis, atau diskusi seputar dokumentasi dan inovasi perusahaan kami.">
+
+    <!-- ===== OPEN GRAPH TAGS ===== -->
+    <meta property="og:title" id="og-title" content="AXION Neuralis — Kontak">
+    <meta property="og:description" id="og-description" content="Hubungi AXION Neuralis untuk pertanyaan, kemitraan strategis, atau diskusi seputar dokumentasi dan inovasi perusahaan kami.">
+    <meta property="og:image" content="assets/images/hero/og-image.webp">
+    <meta property="og:url" content="https://axion-neuralis.pages.dev/contact.html">
+    <meta property="og:type" content="website">
+
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" id="twitter-title" content="AXION Neuralis — Kontak">
+    <meta name="twitter:description" id="twitter-description" content="Hubungi AXION Neuralis untuk pertanyaan, kemitraan strategis, atau diskusi seputar dokumentasi dan inovasi perusahaan kami.">
+    <meta name="twitter:image" content="assets/images/hero/og-image.webp">
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/images/icons/favicon.svg">
+
+    <!-- ===== FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ===== STYLES ===== -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ============================================================
+    LOADING SCREEN
+    ============================================================ -->
+    <div id="loading-screen" role="alert" aria-label="Loading">
+        <div class="loading-container">
+            <img src="assets/images/icons/logo.svg" alt="AXION Neuralis Logo" width="64" height="64">
+            <div class="loading-spinner"></div>
+            <p data-i18n="loading.text">Memuat...</p>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    NAVIGASI (Sticky)
+    ============================================================ -->
+    <header id="main-nav" role="banner">
+        <nav class="navbar" aria-label="Navigasi utama">
+            <div class="nav-container">
+                <!-- Logo -->
+                <a href="./index.html" class="nav-logo" aria-label="AXION Neuralis Beranda">
+                    <img src="assets/images/icons/logo.svg" alt="AXION Neuralis Logo" width="120" height="32">
+                </a>
+
+                <!-- Menu Hamburger (Mobile) -->
+                <button class="nav-hamburger" aria-label="Buka menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Menu -->
+                <ul class="nav-menu">
+                    <li><a href="./index.html" id="nav-home" class="nav-link" data-i18n="nav.home">Beranda</a></li>
+                    <li><a href="./about.html" id="nav-about" class="nav-link" data-i18n="nav.about">Profil</a></li>
+                    <li><a href="./services.html" id="nav-services" class="nav-link" data-i18n="nav.services">Layanan</a></li>
+                    <li><a href="./contact.html" id="nav-contact" class="nav-link active" data-i18n="nav.contact">Kontak</a></li>
+                </ul>
+
+                <!-- Navbar Actions -->
+                <div class="nav-actions">
+                    <!-- Play All -->
+                    <button id="play-all-btn" class="nav-btn" aria-label="Putar semua audio">
+                        <img src="assets/images/icons/speaker.svg" alt="Speaker" width="24" height="24">
+                        <span id="play-all-text" data-i18n="nav.playAll">Putar Semua</span>
+                    </button>
+                    <!-- Language Switch -->
+                    <button id="lang-switch-btn" class="nav-btn" aria-label="Ganti bahasa">
+                        <img src="assets/images/icons/language.svg" alt="Bahasa" width="24" height="24">
+                        <span id="lang-switch-text" data-i18n="nav.langSwitch">EN</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================================
+    MAIN CONTENT
+    ============================================================ -->
+    <main id="main-content" role="main">
+        <!-- ===== CONTACT HEADER ===== -->
+        <section id="contact-header" class="section-contact-header" aria-labelledby="contact-header-title">
+            <div class="container">
+                <span id="contact-header-badge" class="badge" data-i18n="contact.header.badge">Hubungi Kami</span>
+                <h1 id="contact-header-title" data-i18n="contact.header.h1">Mari Terhubung dan Berkolaborasi.</h1>
+                <p id="contact-header-desc" data-i18n="contact.header.p">Kami sangat terbuka untuk mendengarkan pertanyaan, masukan, maupun peluang kemitraan strategis. Silakan sampaikan pesan Anda melalui formulir di bawah ini.</p>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT FORM & INFO ===== -->
+        <section id="contact-body" class="section-contact-body" aria-labelledby="contact-form-title">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Form -->
+                    <div class="contact-form-wrapper">
+                        <h2 id="contact-form-title" class="sr-only" data-i18n="contact.form.submitBtn">Formulir Kontak</h2>
+                        <form id="contact-form" action="mailto:azrielspace852@gmail.com" method="POST" enctype="text/plain" novalidate>
+                            <!-- Nama -->
+                            <div class="form-group">
+                                <label for="contact-name" id="contact-name-label" data-i18n="contact.form.nameLabel">Nama Lengkap</label>
+                                <input type="text" id="contact-name" name="name" data-i18n-placeholder="contact.form.namePlaceholder" placeholder="Masukkan nama Anda" required minlength="2" aria-required="true">
+                                <div id="contact-name-error" class="form-error" role="alert"></div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="contact-email" id="contact-email-label" data-i18n="contact.form.emailLabel">Alamat Email</label>
+                                <input type="email" id="contact-email" name="email" data-i18n-placeholder="contact.form.emailPlaceholder" placeholder="nama@domain.com" required aria-required="true">
+                                <div id="contact-email-error" class="form-error" role="alert"></div>
+                            </div>
+
+                            <!-- Pesan -->
+                            <div class="form-group">
+                                <label for="contact-message" id="contact-message-label" data-i18n="contact.form.messageLabel">Pesan</label>
+                                <textarea id="contact-message" name="message" data-i18n-placeholder="contact.form.messagePlaceholder" placeholder="Tulis pesan, pertanyaan, atau proposal Anda di sini..." required minlength="10" aria-required="true"></textarea>
+                                <div id="contact-message-error" class="form-error" role="alert"></div>
+                            </div>
+
+                            <!-- Submit -->
+                            <button type="submit" id="contact-submit" class="btn-primary" data-i18n="contact.form.submitBtn">Kirim Pesan</button>
+
+                            <!-- Success Message -->
+                            <div id="contact-success" class="form-success" role="status" style="display:none;"></div>
+                        </form>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="contact-info-wrapper">
+                        <h3 id="contact-info-title" data-i18n="contact.info.title">Informasi Kontak</h3>
+
+                        <div class="contact-info-item">
+                            <span id="contact-email-label-info" data-i18n="contact.info.emailLabel">Email Resmi</span>
+                            <a href="mailto:azrielspace852@gmail.com" id="contact-email-value">azrielspace852@gmail.com</a>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <span id="contact-community-label" data-i18n="contact.info.communityLabel">Bergabung dengan Komunitas</span>
+                            <p id="contact-community-text" data-i18n="contact.info.communityText">Temukan kami di berbagai platform resmi dan grup komunitas AXION melalui tautan resmi di bagian footer halaman.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audio Topic 4 -->
+                <div class="audio-wrapper">
+                    <button id="contact-audio-btn" class="audio-btn" aria-label="Dengarkan Informasi Kontak (Topik 4)">
+                        <img src="assets/images/icons/play.svg" alt="Play" width="20" height="20">
+                        <span id="contact-audio-text" data-i18n="contact.audioTopic4.audioBtn">Dengarkan Informasi Kontak (Topik 4)</span>
+                    </button>
+                    <div class="transcript-wrapper">
+                        <span id="contact-transcript-label" class="transcript-label" data-i18n="contact.audioTopic4.transcriptLabel">Transkrip Audio:</span>
+                        <p id="contact-transcript" class="transcript-text" data-i18n="contact.audioTopic4.transcript">Kami menghargai setiap koneksi. Anda dapat menghubungi tim AXION Neuralis melalui email resmi atau bergabung dengan komunitas kami di Telegram dan WhatsApp. Tautan lengkap tersedia di footer website.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer id="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-brand">
+                    <img src="assets/images/icons/logo.svg" alt="AXION Neuralis" width="140" height="40">
+                    <p id="footer-tagline" data-i18n="footer.tagline">Mendokumentasikan Inovasi.</p>
+                    <p id="footer-copyright" data-i18n="footer.copyright">© 2026 AXION Neuralis. Seluruh hak cipta dilindungi undang-undang.</p>
+                </div>
+
+                <!-- Links -->
+                <div class="footer-links">
+                    <h3 id="footer-links-title" data-i18n="footer.linksTitle">Tautan Resmi & Komunitas</h3>
+                    <ul id="footer-links-list">
+                        <li><a href="https://axion-neuralis.pages.dev/" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.0">Website Utama</a></li>
+                        <li><a href="https://azriel-space.pages.dev/" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.1">Azriel Space</a></li>
+                        <li><a href="https://cutt.ly/xyuGKF4M" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.2">WhatsApp azriel.py</a></li>
+                        <li><a href="https://cutt.ly/PyuGXYgP" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.3">Grup WA AXION</a></li>
+                        <li><a href="https://cutt.ly/6yuGVgXp" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.4">Grup WA Azriel Space</a></li>
+                        <li><a href="https://t.me/azrielpyy" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.5">Telegram azriel.py</a></li>
+                        <li><a href="https://t.me/azrielspace" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.6">Telegram Azriel Space</a></li>
+                        <li><a href="https://t.me/axionneuralis" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.7">Telegram AXION</a></li>
+                        <li><a href="mailto:azrielspace852@gmail.com" data-i18n="footer.links.8">Email Resmi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# ========================================
+# REDIRECTS UNTUK ROOT & PAGES
+# ========================================
+
+# Root URL ke index.html
+/ /index.html 200
+
+# Semua halaman HTML (karena udah di root)
+/*.html /:splat.html 200
+
+# Aset statis
+/assets/* /assets/:splat 200
+/css/* /css/:splat 200
+/js/* /js/:splat 200
+
+# 404 Fallback
+/* /404.html 404
