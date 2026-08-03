@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- ===== META TAGS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="meta-title" data-i18n="meta_index.title">AXION Neuralis — Beranda</title>
+    <meta name="description" id="meta-description" data-i18n="meta_index.description" content="AXION Neuralis adalah pusat informasi dan profil perusahaan inovatif. Temukan visi, misi, dan layanan terdepan kami untuk masa depan yang lebih baik.">
+    
+    <!-- ===== OPEN GRAPH TAGS ===== -->
+    <meta property="og:title" id="og-title" content="AXION Neuralis — Beranda">
+    <meta property="og:description" id="og-description" content="AXION Neuralis adalah pusat informasi dan profil perusahaan inovatif. Temukan visi, misi, dan layanan terdepan kami untuk masa depan yang lebih baik.">
+    <meta property="og:image" content="/assets/images/hero/og-image.webp">
+    <meta property="og:url" content="https://axion-neuralis.pages.dev/">
+    <meta property="og:type" content="website">
+    
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" id="twitter-title" content="AXION Neuralis — Beranda">
+    <meta name="twitter:description" id="twitter-description" content="AXION Neuralis adalah pusat informasi dan profil perusahaan inovatif. Temukan visi, misi, dan layanan terdepan kami untuk masa depan yang lebih baik.">
+    <meta name="twitter:image" content="/assets/images/hero/og-image.webp">
+    
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" type="image/svg+xml" href="/assets/images/icons/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/images/icons/favicon.svg">
+    
+    <!-- ===== FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- ===== STYLES ===== -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- ============================================================
+    LOADING SCREEN
+    ============================================================ -->
+    <div id="loading-screen" role="alert" aria-label="Loading">
+        <div class="loading-container">
+            <img src="/assets/images/icons/logo.svg" alt="AXION Neuralis Logo" width="64" height="64">
+            <div class="loading-spinner"></div>
+            <p data-i18n="loading.text">Memuat...</p>
+        </div>
+    </div>
+    
+    <!-- ============================================================
+    ONBOARDING MODAL (3 Langkah)
+    ============================================================ -->
+    <div id="onboarding-modal" role="dialog" aria-modal="true" aria-label="Selamat datang di AXION Neuralis" style="display:none;">
+        <div class="onboarding-overlay">
+            <div class="onboarding-content">
+                <button id="onboarding-close" class="onboarding-close" aria-label="Tutup onboarding">
+                    <img src="/assets/images/icons/close.svg" alt="Tutup" width="16" height="16">
+                </button>
+                
+                <!-- Step 1: Pilih Bahasa -->
+                <div id="onboarding-step-1" class="onboarding-step">
+                    <div class="onboarding-icon">
+                        <img src="/assets/images/icons/language.svg" alt="Pilih Bahasa" width="48" height="48">
+                    </div>
+                    <h2 data-i18n="onboarding.step1.title">Pilih Bahasa</h2>
+                    <p data-i18n="onboarding.step1.desc">Pilih bahasa yang Anda inginkan untuk menjelajahi website ini.</p>
+                    <div class="onboarding-lang-buttons">
+                        <button class="btn-lang" data-lang="id" aria-label="Pilih Bahasa Indonesia">Bahasa Indonesia</button>
+                        <button class="btn-lang" data-lang="en" aria-label="Pilih Bahasa Inggris">English</button>
+                    </div>
+                </div>
+                
+                <!-- Step 2: Tentang Dokumentasi -->
+                <div id="onboarding-step-2" class="onboarding-step" style="display:none;">
+                    <div class="onboarding-icon">
+                        <img src="/assets/images/icons/check.svg" alt="Dokumentasi" width="48" height="48">
+                    </div>
+                    <h2 data-i18n="onboarding.step2.title">Tentang Dokumentasi</h2>
+                    <p data-i18n="onboarding.step2.desc">AXION Neuralis adalah pusat dokumentasi dan informasi perusahaan yang berfokus pada transparansi dan inovasi.</p>
+                    <button id="onboarding-next-2" class="btn-primary" data-i18n="onboarding.next">Selanjutnya</button>
+                </div>
+                
+                <!-- Step 3: Lisensi & Hak Cipta -->
+                <div id="onboarding-step-3" class="onboarding-step" style="display:none;">
+                    <div class="onboarding-icon">
+                        <img src="/assets/images/icons/check.svg" alt="Selesai" width="48" height="48">
+                    </div>
+                    <h2 data-i18n="onboarding.step3.title">Lisensi & Hak Cipta</h2>
+                    <p data-i18n="footer.copyright">© 2026 AXION Neuralis. Seluruh hak cipta dilindungi undang-undang.</p>
+                    <button id="onboarding-finish" class="btn-primary" data-i18n="onboarding.finish">Selesai</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ============================================================
+    NAVIGASI (Sticky)
+    ============================================================ -->
+    <header id="main-nav" role="banner">
+        <nav class="navbar" aria-label="Navigasi utama">
+            <div class="nav-container">
+                <!-- Logo -->
+                <a href="/pages/index.html" class="nav-logo" aria-label="AXION Neuralis Beranda">
+                    <img src="/assets/images/icons/logo.svg" alt="AXION Neuralis Logo" width="120" height="32">
+                </a>
+                
+                <!-- Menu Hamburger (Mobile) -->
+                <button class="nav-hamburger" aria-label="Buka menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Menu -->
+                <ul class="nav-menu">
+                    <li><a href="/pages/index.html" id="nav-home" class="nav-link active" data-i18n="nav.home">Beranda</a></li>
+                    <li><a href="/pages/about.html" id="nav-about" class="nav-link" data-i18n="nav.about">Profil</a></li>
+                    <li><a href="/pages/services.html" id="nav-services" class="nav-link" data-i18n="nav.services">Layanan</a></li>
+                    <li><a href="/pages/contact.html" id="nav-contact" class="nav-link" data-i18n="nav.contact">Kontak</a></li>
+                </ul>
+                
+                <!-- Navbar Actions -->
+                <div class="nav-actions">
+                    <!-- Play All -->
+                    <button id="play-all-btn" class="nav-btn" aria-label="Putar semua audio">
+                        <img src="/assets/images/icons/speaker.svg" alt="Speaker" width="24" height="24">
+                        <span id="play-all-text" data-i18n="nav.playAll">Putar Semua</span>
+                    </button>
+                    <!-- Language Switch -->
+                    <button id="lang-switch-btn" class="nav-btn" aria-label="Ganti bahasa">
+                        <img src="/assets/images/icons/language.svg" alt="Bahasa" width="24" height="24">
+                        <span id="lang-switch-text" data-i18n="nav.langSwitch">EN</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- ============================================================
+    MAIN CONTENT
+    ============================================================ -->
+    <main id="main-content" role="main">
+        <!-- ===== HERO SECTION ===== -->
+        <section id="hero" class="section-hero" aria-labelledby="hero-title">
+            <div class="container">
+                <span id="hero-badge" class="badge" data-i18n="hero.badge">Portal Dokumentasi Resmi</span>
+                <h1 id="hero-title" data-i18n="hero.h1">Mendokumentasikan Inovasi, Menginspirasi Masa Depan.</h1>
+                <p id="hero-desc" data-i18n="hero.p">Selamat datang di AXION Neuralis. Portal resmi dokumentasi publik, profil perusahaan, dan pusat informasi strategis bagi investor, mitra, dan masyarakat.</p>
+                <div class="hero-actions">
+                    <a href="/pages/services.html" id="hero-cta" class="btn-primary" data-i18n="hero.cta">Jelajahi Layanan</a>
+                    <a href="/pages/about.html" id="hero-cta-secondary" class="btn-secondary" data-i18n="hero.ctaSecondary">Tentang Kami</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ===== SUMMARY SECTION ===== -->
+        <section id="summary" class="section-summary" aria-labelledby="summary-title">
+            <div class="container">
+                <span id="summary-tag" class="badge" data-i18n="summary.sectionTag">Ringkasan Perusahaan</span>
+                <h2 id="summary-title" data-i18n="summary.h2">Pusat Informasi & Transparansi Publik</h2>
+                <p id="summary-p1" data-i18n="summary.p1">AXION Neuralis berdedikasi untuk menjadi sumber rujukan utama yang menjunjung tinggi transparansi, profesionalisme, dan inovasi berkelanjutan.</p>
+                <p id="summary-p2" data-i18n="summary.p2">Kami mengarsipkan setiap langkah kemajuan, visi, dan misi perusahaan agar dapat diakses oleh publik, investor, dan mitra secara komprehensif dan akurat.</p>
+                
+                <!-- Audio Topic 1 -->
+                <div class="audio-wrapper">
+                    <button id="summary-audio-btn" class="audio-btn" aria-label="Dengarkan Ringkasan (Topik 1)">
+                        <img src="/assets/images/icons/play.svg" alt="Play" width="20" height="20">
+                        <span id="summary-audio-text" data-i18n="summary.audioBtn">Dengarkan Ringkasan (Topik 1)</span>
+                    </button>
+                    <div class="transcript-wrapper">
+                        <span id="summary-transcript-label" class="transcript-label" data-i18n="summary.transcriptLabel">Transkrip Audio:</span>
+                        <p id="summary-transcript" class="transcript-text" data-i18n="summary.transcript">Halo, selamat datang di AXION Neuralis. Kami adalah pusat dokumentasi dan informasi perusahaan yang berfokus pada inovasi dan transparansi. Temukan visi, misi, serta layanan kami yang dirancang untuk masa depan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer id="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-brand">
+                    <img src="/assets/images/icons/logo.svg" alt="AXION Neuralis" width="140" height="40">
+                    <p id="footer-tagline" data-i18n="footer.tagline">Mendokumentasikan Inovasi.</p>
+                    <p id="footer-copyright" data-i18n="footer.copyright">© 2026 AXION Neuralis. Seluruh hak cipta dilindungi undang-undang.</p>
+                </div>
+                
+                <!-- Links -->
+                <div class="footer-links">
+                    <h3 id="footer-links-title" data-i18n="footer.linksTitle">Tautan Resmi & Komunitas</h3>
+                    <ul id="footer-links-list">
+                        <li><a href="https://axion-neuralis.pages.dev/" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.0">Website Utama</a></li>
+                        <li><a href="https://azriel-space.pages.dev/" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.1">Azriel Space</a></li>
+                        <li><a href="https://cutt.ly/xyuGKF4M" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.2">WhatsApp azriel.py</a></li>
+                        <li><a href="https://cutt.ly/PyuGXYgP" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.3">Grup WA AXION</a></li>
+                        <li><a href="https://cutt.ly/6yuGVgXp" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.4">Grup WA Azriel Space</a></li>
+                        <li><a href="https://t.me/azrielpyy" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.5">Telegram azriel.py</a></li>
+                        <li><a href="https://t.me/azrielspace" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.6">Telegram Azriel Space</a></li>
+                        <li><a href="https://t.me/axionneuralis" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.7">Telegram AXION</a></li>
+                        <li><a href="mailto:azrielspace852@gmail.com" data-i18n="footer.links.8">Email Resmi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script src="/js/main.js" defer></script>
+</body>
+</html>

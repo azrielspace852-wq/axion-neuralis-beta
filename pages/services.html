@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- ===== META TAGS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="meta-title" data-i18n="meta_services.title">AXION Neuralis — Layanan</title>
+    <meta name="description" id="meta-description" data-i18n="meta_services.description" content="Jelajahi layanan utama AXION Neuralis: dokumentasi korporat, pusat informasi strategis, dan transparansi data publik untuk investor dan mitra.">
+    
+    <!-- ===== OPEN GRAPH TAGS ===== -->
+    <meta property="og:title" id="og-title" content="AXION Neuralis — Layanan">
+    <meta property="og:description" id="og-description" content="Jelajahi layanan utama AXION Neuralis: dokumentasi korporat, pusat informasi strategis, dan transparansi data publik untuk investor dan mitra.">
+    <meta property="og:image" content="/assets/images/hero/og-image.webp">
+    <meta property="og:url" content="https://axion-neuralis.pages.dev/pages/services.html">
+    <meta property="og:type" content="website">
+    
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" id="twitter-title" content="AXION Neuralis — Layanan">
+    <meta name="twitter:description" id="twitter-description" content="Jelajahi layanan utama AXION Neuralis: dokumentasi korporat, pusat informasi strategis, dan transparansi data publik untuk investor dan mitra.">
+    <meta name="twitter:image" content="/assets/images/hero/og-image.webp">
+    
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" type="image/svg+xml" href="/assets/images/icons/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/images/icons/favicon.svg">
+    
+    <!-- ===== FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- ===== STYLES ===== -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- ============================================================
+    LOADING SCREEN
+    ============================================================ -->
+    <div id="loading-screen" role="alert" aria-label="Loading">
+        <div class="loading-container">
+            <img src="/assets/images/icons/logo.svg" alt="AXION Neuralis Logo" width="64" height="64">
+            <div class="loading-spinner"></div>
+            <p data-i18n="loading.text">Memuat...</p>
+        </div>
+    </div>
+    
+    <!-- ============================================================
+    NAVIGASI (Sticky)
+    ============================================================ -->
+    <header id="main-nav" role="banner">
+        <nav class="navbar" aria-label="Navigasi utama">
+            <div class="nav-container">
+                <!-- Logo -->
+                <a href="/pages/index.html" class="nav-logo" aria-label="AXION Neuralis Beranda">
+                    <img src="/assets/images/icons/logo.svg" alt="AXION Neuralis Logo" width="120" height="32">
+                </a>
+                
+                <!-- Menu Hamburger (Mobile) -->
+                <button class="nav-hamburger" aria-label="Buka menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Menu -->
+                <ul class="nav-menu">
+                    <li><a href="/pages/index.html" id="nav-home" class="nav-link" data-i18n="nav.home">Beranda</a></li>
+                    <li><a href="/pages/about.html" id="nav-about" class="nav-link" data-i18n="nav.about">Profil</a></li>
+                    <li><a href="/pages/services.html" id="nav-services" class="nav-link active" data-i18n="nav.services">Layanan</a></li>
+                    <li><a href="/pages/contact.html" id="nav-contact" class="nav-link" data-i18n="nav.contact">Kontak</a></li>
+                </ul>
+                
+                <!-- Navbar Actions -->
+                <div class="nav-actions">
+                    <!-- Play All -->
+                    <button id="play-all-btn" class="nav-btn" aria-label="Putar semua audio">
+                        <img src="/assets/images/icons/speaker.svg" alt="Speaker" width="24" height="24">
+                        <span id="play-all-text" data-i18n="nav.playAll">Putar Semua</span>
+                    </button>
+                    <!-- Language Switch -->
+                    <button id="lang-switch-btn" class="nav-btn" aria-label="Ganti bahasa">
+                        <img src="/assets/images/icons/language.svg" alt="Bahasa" width="24" height="24">
+                        <span id="lang-switch-text" data-i18n="nav.langSwitch">EN</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- ============================================================
+    MAIN CONTENT
+    ============================================================ -->
+    <main id="main-content" role="main">
+        <!-- ===== SERVICES HEADER ===== -->
+        <section id="services-header" class="section-services-header" aria-labelledby="services-header-title">
+            <div class="container">
+                <span id="services-header-badge" class="badge" data-i18n="services.header.badge">Layanan Kami</span>
+                <h1 id="services-header-title" data-i18n="services.header.h1">Solusi Informasi dan Dokumentasi Terintegrasi.</h1>
+                <p id="services-header-desc" data-i18n="services.header.p">Kami menyediakan layanan komprehensif untuk memastikan setiap data, inovasi, dan langkah strategis perusahaan terdokumentasi dengan aman, akurat, dan dapat diakses oleh seluruh pemangku kepentingan.</p>
+            </div>
+        </section>
+        
+        <!-- ===== SERVICES CARDS ===== -->
+        <section id="services-cards" class="section-services-cards" aria-labelledby="services-title">
+            <div class="container">
+                <h2 id="services-title" class="sr-only">Layanan Utama</h2>
+                <div class="services-grid" id="services-grid">
+                    <!-- Card 1: Documentation -->
+                    <article class="service-card" id="service-card-1">
+                        <div class="service-icon">
+                            <img src="/assets/images/icons/archive.svg" alt="Ikon Dokumentasi Korporat" width="48" height="48">
+                        </div>
+                        <h3 id="service-card-1-title" data-i18n="services.cards.0.title">Dokumentasi Korporat</h3>
+                        <p id="service-card-1-desc" data-i18n="services.cards.0.description">Mengarsipkan rekam jejak, visi, dan pencapaian perusahaan dalam sistem yang terstruktur, aman, dan mudah ditelusuri sebagai fondasi kepercayaan publik.</p>
+                    </article>
+                    
+                    <!-- Card 2: Information Hub -->
+                    <article class="service-card" id="service-card-2">
+                        <div class="service-icon">
+                            <img src="/assets/images/icons/hub.svg" alt="Ikon Pusat Informasi Strategis" width="48" height="48">
+                        </div>
+                        <h3 id="service-card-2-title" data-i18n="services.cards.1.title">Pusat Informasi Strategis</h3>
+                        <p id="service-card-2-desc" data-i18n="services.cards.1.description">Menyediakan portal tunggal bagi investor dan mitra bisnis untuk mengakses data komprehensif, laporan kemajuan, dan arah pengembangan perusahaan secara real-time.</p>
+                    </article>
+                    
+                    <!-- Card 3: Transparency -->
+                    <article class="service-card" id="service-card-3">
+                        <div class="service-icon">
+                            <img src="/assets/images/icons/shield.svg" alt="Ikon Transparansi Data Publik" width="48" height="48">
+                        </div>
+                        <h3 id="service-card-3-title" data-i18n="services.cards.2.title">Transparansi Data Publik</h3>
+                        <p id="service-card-3-desc" data-i18n="services.cards.2.description">Menjamin aksesibilitas informasi yang jujur dan akuntabel kepada masyarakat, menjunjung tinggi integritas dan profesionalisme di era digital global.</p>
+                    </article>
+                </div>
+                
+                <!-- Audio Topic 3 -->
+                <div class="audio-wrapper">
+                    <button id="services-audio-btn" class="audio-btn" aria-label="Dengarkan Penjelasan Layanan (Topik 3)">
+                        <img src="/assets/images/icons/play.svg" alt="Play" width="20" height="20">
+                        <span id="services-audio-text" data-i18n="services.audioTopic3.audioBtn">Dengarkan Penjelasan Layanan (Topik 3)</span>
+                    </button>
+                    <div class="transcript-wrapper">
+                        <span id="services-transcript-label" class="transcript-label" data-i18n="services.audioTopic3.transcriptLabel">Transkrip Audio:</span>
+                        <p id="services-transcript" class="transcript-text" data-i18n="services.audioTopic3.transcript">Layanan AXION Neuralis berfokus pada tiga pilar utama: dokumentasi korporat yang aman, pusat informasi strategis bagi investor, dan transparansi data publik. Kami memastikan setiap informasi yang Anda butuhkan tersedia secara akurat dan akuntabel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer id="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-brand">
+                    <img src="/assets/images/icons/logo.svg" alt="AXION Neuralis" width="140" height="40">
+                    <p id="footer-tagline" data-i18n="footer.tagline">Mendokumentasikan Inovasi.</p>
+                    <p id="footer-copyright" data-i18n="footer.copyright">© 2026 AXION Neuralis. Seluruh hak cipta dilindungi undang-undang.</p>
+                </div>
+                
+                <!-- Links -->
+                <div class="footer-links">
+                    <h3 id="footer-links-title" data-i18n="footer.linksTitle">Tautan Resmi & Komunitas</h3>
+                    <ul id="footer-links-list">
+                        <li><a href="https://axion-neuralis.pages.dev/" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.0">Website Utama</a></li>
+                        <li><a href="https://azriel-space.pages.dev/" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.1">Azriel Space</a></li>
+                        <li><a href="https://cutt.ly/xyuGKF4M" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.2">WhatsApp azriel.py</a></li>
+                        <li><a href="https://cutt.ly/PyuGXYgP" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.3">Grup WA AXION</a></li>
+                        <li><a href="https://cutt.ly/6yuGVgXp" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.4">Grup WA Azriel Space</a></li>
+                        <li><a href="https://t.me/azrielpyy" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.5">Telegram azriel.py</a></li>
+                        <li><a href="https://t.me/azrielspace" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.6">Telegram Azriel Space</a></li>
+                        <li><a href="https://t.me/axionneuralis" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.7">Telegram AXION</a></li>
+                        <li><a href="mailto:azrielspace852@gmail.com" data-i18n="footer.links.8">Email Resmi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script src="/js/main.js" defer></script>
+</body>
+</html>
